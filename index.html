@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LievitiAmo • Pizzeria Sorrentina • Forlì</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS principale -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header role="banner">
+        <!-- Logo -->
+        <a href="#home" class="logo" aria-label="LievitiAmo Home">
+            <picture>
+                <source srcset="img/logo-lievitiamo.jpg" type="image/jpeg">
+                <img src="img/logo-lievitiamo.png" alt="LievitiAmo Pizzeria Sorrentina" class="logo-img" loading="eager" decoding="async">
+            </picture>
+        </a>
+
+        <!-- Navigazione principale -->
+        <nav class="site-nav" role="navigation" aria-label="Navigazione principale">
+            <button class="burger" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-list">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul id="nav-list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#filosofia" class="nav-link">Filosofia</a></li>
+                <li><a href="#specialita" class="nav-link">Specialità</a></li>
+                <li><a href="#chi-siamo" class="nav-link">Chi siamo</a></li>
+                <li><a href="#promo-studenti" class="nav-link">Promo studenti</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#contact" class="nav-link">Contatti</a></li>
+            </ul>
+        </nav>
+
+        <!-- CTA rapida telefono -->
+        <a data-phone class="order-btn">Chiama</a>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-card">
+                    <h1>LievitiAmo Pizzeria Sorrentina</h1>
+                    <h2>Pizza sorrentina • lievitazione naturale</h2>
+
+                    <p>
+                        Ingredienti selezionati, impasto a lunga maturazione. Asporto &amp; domicilio, di fronte al nuovo polo universitario.
+                    </p>
+
+                    <!-- Frase sulla qualità farine -->
+                    <p class="hero-quality">
+                        Tutte le nostre pizze sono preparate con farine non raffinate per garantire fragranza, profumo e leggerezza in ogni morso.
+                    </p>
+
+                    <!-- Azioni principali -->
+                    <div class="quick-actions">
+                        <a data-phone class="btn-call">
+                            <i class="fas fa-phone"></i> Chiama
+                        </a>
+
+                        <a href="#menu" id="openMenuChooser" class="btn-outline">
+                            <i class="fa-solid fa-pizza-slice"></i> Menu
+                        </a>
+
+                        <a href="#" data-address class="btn-outline" target="_blank" rel="noopener">
+                            <i class="fas fa-map-marker-alt"></i> Come arrivare
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FILOSOFIA ================= -->
+    <section id="filosofia" class="philosophy animate">
+
+        <div class="philosophy-container">
+
+            <!-- Titolo di sezione -->
+            <div class="philosophy-header">
+                <span class="philosophy-tag">🌾 Il nostro impegno</span>
+                <h2>Pizza onesta, fatta con tempo e rispetto.</h2>
+                <p class="philosophy-intro">
+                    Il nostro impegno è semplice: fare una pizza che racconti chi siamo. Niente trucchi, niente scorciatoie — solo ricerca delle materie prime migliori, tempo di maturazione, e rispetto per la tradizione.
+                </p>
+            </div>
+
+            <!-- Tre banner / card -->
+            <div class="pillars pillars--banner">
+
+                <article class="pillar banner-card point">
+                    <h3>Materia prima</h3>
+                    <p>Selezioniamo ingredienti dal Salento, dalla Costiera e dalla Romagna. Per noi, tutto nasce da qui.</p>
+                </article>
+
+                <article class="pillar banner-card point">
+                    <h3>Farine scelte</h3>
+                    <p>Usiamo solo farine selezionate per profumo, fragranza e una leggerezza naturale.</p>
+                </article>
+
+                <article class="pillar banner-card point">
+                    <h3>Il nostro impegno</h3>
+                    <p>Fare una pizza vera, semplice e sincera. E forse è per questo che chi ci prova… torna.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="specialita-mese" class="specialita-mese" aria-labelledby="specialita-title">
+        <div class="specialita-inner">
+            <div class="section-badge-wrapper">
+                <div class="section-badge">
+                    🎄 Edizione Limitata
+                </div>
+                <h2 id="specialita-title" class="specialita-title">
+                    Specialità di Natale
+                </h2>
+                <p class="specialita-subtitle">
+                    Piatti della tradizione napoletana disponibili solo a dicembre.
+                </p>
+            </div>
+
+            <div class="specialita-content">
+                <div class="specialita-lista">
+                    <h3 class="specialita-lista-title">Piatti disponibili</h3>
+                    <ul class="specialita-items">
+                        <li class="specialita-item">Torta di baccalà</li>
+                        <li class="specialita-item">Casatiello</li>
+                        <li class="specialita-item">Pizza di scarole</li>
+                        <li class="specialita-item">Panettone salato</li>
+                    </ul>
+                </div>
+
+                <div class="specialita-ordine">
+                    <div class="specialita-scadenza">
+                        <span class="scadenza-label">Scadenza ordini</span>
+                        <span class="scadenza-data">Domenica 21 dicembre</span>
+                    </div>
+                    <p class="specialita-note">
+                        Preparazioni artigianali, disponibili solo su prenotazione.
+                    </p>
+                    <a href="#" class="btn-primary-cta specialita-cta" data-whatsapp>
+                    Prenota ora su WhatsApp
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= SPECIALITÀ ================= -->
+    <section id="specialita" class="specialita-section">
+        <div class="section-badge-wrapper">
+            <div class="section-badge">
+                <span class="section-icon">⭐</span>
+                <span class="section-label">Specialità</span>
+            </div>
+        </div>
+
+        <p class="intro">
+            Sapori che raccontano la nostra storia, preparati ogni giorno con ingredienti freschi e passione.
+        </p>
+
+        <div class="specialita-grid">
+            <!-- Card 1: Pane fresco -->
+            <div class="card">
+                <span class="badge">Su ordinazione</span>
+                <i class="fa-solid fa-bread-slice icon"></i>
+                <h3>Pane fresco</h3>
+                <p>
+                    Cotto nel nostro forno a legna tutti i <strong>mercoledì</strong> e <strong>venerdì</strong>. Tutti i giovedì: provalo nei panzerotti, nella puccia salentina o sulla pala!
+                </p>
+            </div>
+
+            <!-- Card 2: Polpo al coccio -->
+            <div class="card">
+                <span class="badge">Il Più Amato</span>
+                <i class="fa-solid fa-fish icon"></i>
+                <h3>Polpo al coccio</h3>
+                <p>
+                    Cottura lenta, patate e profumi mediterranei. Ogni <strong>giovedì</strong> lo trovi anche nei panzerotti, nella puccia salentina e sulla pala.
+                </p>
+            </div>
+
+            <!-- Card 3: Pizza al taglio -->
+            <div class="card">
+                <span class="badge"><i class="fa-solid fa-pizza-slice"></i></span>
+                <h3>Pizza al taglio</h3>
+                <p>
+                    A pranzo, dal martedì al venerdì, ti aspetta la nostra pizza al taglio: appena sfornata, croccante e leggera.
+                </p>
+            </div>
+        </div>
+
+        <!-- CTA WhatsApp specialità -->
+        <div class="cta-center">
+            <a href="#" data-whatsapp class="btn-primary-cta" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i> Prenota su WhatsApp
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- ================= CHI SIAMO ================= -->
+    <section id="chi-siamo" class="about" aria-label="Chi siamo">
+        <div class="about-wrap">
+
+            <!-- Testa sezione -->
+            <header class="about-head">
+                <span class="about-tag">👋 Chi siamo</span>
+                <h2>Siamo nati dal forno e dal cuore.</h2>
+                <p class="about-intro">
+                    Siamo una piccola pizzeria artigianale nata dall’incontro di due terre che parlano la stessa lingua: quella della cucina fatta con il cuore.
+                </p>
+            </header>
+
+            <!-- Griglia contenuti: testo + foto -->
+            <div class="about-grid">
+                <!-- Carta testo -->
+                <article class="about-card">
+                    <h3>Le nostre radici</h3>
+
+                    <p>
+                        Il titolare arriva da <strong>Galliano</strong>, nel Salento: una terra di sapori intensi, tradizioni vere e un’ospitalità che ti fa sentire subito di casa.
+                    </p>
+                    <p>
+                        Il nostro pizzaiolo, invece, viene da <strong>Meta di Sorrento</strong>, culla della scuola napoletana più autentica: quella che nasce dal forno a legna, dai pomodori maturi e dagli impasti che respirano lentamente.
+                    </p>
+                    <p>
+                        Da questo incontro nasce <strong>LievitiAmo</strong>: una pizza che unisce la leggerezza sorrentina ai sapori decisi del Sud, con ingredienti scelti con cura e una lievitazione naturale rispettata fino all’ultimo minuto.
+                    </p>
+
+                    <div class="about-bullets">
+                        <p><strong>Ogni impasto</strong> cresce con calma.</p>
+                        <p><strong>Ogni ingrediente</strong> è selezionato con onestà.</p>
+                        <p><strong>Ogni pizza</strong> è fatta come la faremmo per un amico.</p>
+                    </div>
+
+                    <p>
+                        Non siamo una catena: siamo una piccola famiglia che crede nella qualità, nel tempo e nella semplicità fatta bene. E forse è proprio per questo che chi passa da noi, poi torna.
+                    </p>
+
+                    <div class="about-cta">
+                        <a href="#" data-whatsapp class="btn-primary-cta">
+                            <i class="fab fa-whatsapp"></i> Ordina su WhatsApp
+                        </a>
+                        <a href="#" data-address class="text-link" target="_blank" rel="noopener">
+                            Vieni a trovarci
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Foto forno -->
+                <figure class="about-photo">
+                    <img src="img/pizza.jpg" alt="Il nostro forno a legna in cottura" loading="lazy">
+                </figure>
+            </div>
+
+            <!-- Timeline / modo di lavorare -->
+            <div class="about-timeline" aria-label="Il nostro modo di lavorare">
+                <div class="t-item">
+                    <span class="t-year">Impasto</span>
+                    <span class="t-text">Lievitazione lunga, senza fretta</span>
+                </div>
+                <div class="t-item">
+                    <span class="t-year">Ingredienti</span>
+                    <span class="t-text">Scelti tra Salento, Sorrento e Romagna</span>
+                </div>
+                <div class="t-item">
+                    <span class="t-year">Ogni giorno</span>
+                    <span class="t-text">Forno acceso, poche cose ma fatte bene</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= PROMO STUDENTI ================= -->
+    <section id="promo-studenti" class="student-promo" aria-label="Promo studenti">
+        <div class="promo-wrap">
+
+            <!-- Badge promo -->
+            <span class="promo-badge">🎓 Offerta Campus Studenti</span>
+
+            <!-- Testo promo -->
+            <div class="promo-copy">
+                <h2>Da 9 € in su hai un omaggio</h2>
+                <p class="lead">
+                    Se sei studente e il tuo ordine è di almeno <strong>9 €</strong>, scegli il tuo vantaggio:
+                </p>
+            </div>
+
+            <!-- Punti chiave promo -->
+            <ul class="promo-points">
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    <strong>Ritiro in pizzeria:</strong> bibita gratuita
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    <strong>Consegna a domicilio:</strong> consegna gratuita
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i> Valida con tesserino universitario
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i> Non cumulabile con altre promozioni
+                </li>
+            </ul>
+
+            <!-- CTA promo -->
+            <div class="promo-cta">
+                <a href="#" data-whatsapp class="btn-primary-cta">
+                    <i class="fab fa-whatsapp"></i> Ordina su WhatsApp
+                </a>
+                <a href="#" data-phone class="btn-secondary-cta">
+                    <i class="fa-solid fa-phone"></i> Chiama ora
+                </a>
+            </div>
+
+            <!-- Nota legale -->
+            <p class="promo-legal">
+                Promo valida fino a revoca per studenti muniti di tesserino. Un omaggio per ogni ordine pari o superiore a 9 €.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= MENU PIZZE ================= -->
+    <section id="menu" class="menu-full">
+
+        <div class="section-badge-wrapper">
+            <div class="section-badge">
+                <span class="section-icon">🍕</span>
+                <span class="section-label">Il nostro Menu</span>
+            </div>
+        </div>
+        <div class="menu-controls-wrap">
+            <div class="menu-controls">
+                <a href="#">Classiche</a>
+                <a href="#">Bianche</a>
+                <a href="#">Speciali</a>
+                <a href="#">Rosse</a>
+                <a href="#">Di stagione</a>
+                <a href="#">Calzone Sorrentino</a>
+                <a href="#">Saltimbocca</a>
+            </div>
+        </div>
+
+        </div>
+        <div class="menu-filters">
+            <button class="menu-filter-btn is-active" data-filter="all">Tutte</button>
+            <button class="menu-filter-btn" data-filter="vegetarian">Vegetariane</button>
+            <button class="menu-filter-btn" data-filter="vegan">Vegane</button>
+        </div>
+
+
+        <!-- Note servizio / extra -->
+        <div class="menu-badges">
+
+
+            <div class="menu-badge">
+                ➕
+                <p>Ingredienti extra da <strong>1,00 €</strong></p>
+            </div>
+
+            <div class="menu-badge">
+                🍕
+                <p>Tutte le pizze anche in <strong>pala romana</strong></p>
+            </div>
+
+            <div class="menu-badge">
+                🌓
+                <p>Fino a <strong>due gusti</strong> sulla pala</p>
+            </div>
+
+            <div class="menu-badge">
+                💰
+                <p>Pala prezzo <strong>×2</strong></p>
+            </div>
+        </div>
+
+
+        <!-- Render dinamico delle categorie e card dal JSON -->
+        <div id="menu-render"></div>
+
+        <!-- Nota variazioni -->
+        <p class="menu-legend">
+            * Alcune pizze stagionali possono variare in base alla disponibilità.
+        </p>
+
+    </section>
+    <section class="delivery-info">
+        <div class="delivery-badge">
+            <span class="icon">📦</span>
+            <p>Consegna a domicilio a partire da <strong>2,50 €</strong></p>
+        </div>
+    </section>
+    <!-- ================= FOOTER / CONTATTI ================= -->
+    <footer id="contact">
+        <div class="footer-container">
+
+            <!-- COLONNA 1: Brand -->
+            <div class="footer-column">
+                <h3>LievitiAmo Pizzeria Sorrentina</h3>
+                <p>
+                    Pizza autentica italiana con lievitazione naturale e ingredienti selezionati. Tradizione sorrentina a Forlì.
+                </p>
+            </div>
+
+            <!-- COLONNA 2: Contatti -->
+            <div class="footer-column">
+                <h3>Contatti</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <a href="#" data-phone></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#" data-email></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="#" data-address target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COLONNA 3: Social -->
+            <div class="footer-column">
+                <h3>Seguici</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-facebook target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" data-instagram target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- COLONNA 4: Orari -->
+            <div class="footer-column footer-hours">
+                <h3>Orari</h3>
+                <div class="hours-card">
+                    <div class="hours-head">
+                        <span class="contact-icon"><i class="fas fa-clock" aria-hidden="true"></i></span>
+                        <h4>Servizio</h4>
+                    </div>
+                    <div class="hours-grid">
+                        <span><strong>Mar—Ven</strong></span><span>12:00—14:00 / 18:30—22:30</span>
+                        <span><strong>Sab-Dom</strong></span><span>18:30—23:00</span>
+                        <span><strong>Lun</strong></span><span>Chiuso</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="promessa-lievitiamo">
+            <p class="promessa-testuale">
+                <strong>Promessa LievitiAmo:</strong> se qualcosa non è come ti aspetti, chiamaci. Troviamo una soluzione con la stessa cura con cui impastiamo.
+            </p>
+        </section>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            © <span id="year"></span> LievitiAmo Pizzeria Sorrentina. Tutti i diritti riservati.
+        </div>
+    </footer>
+
+    <!-- ================= MENU CHOOSER OVERLAY ================= -->
+    <div id="menuChooser" class="mc" hidden>
+        <div class="mc-backdrop" aria-hidden="true"></div>
+
+        <div class="mc-dialog" role="dialog" aria-modal="true" aria-labelledby="mcTitle">
+            <button class="mc-close" aria-label="Chiudi">×</button>
+            <h3 id="mcTitle">Menu Pizze</h3>
+            <p>Vuoi aprirlo ora sul sito o scaricare il PDF?</p>
+
+            <div class="mc-actions">
+                <a id="mcView" href="#menu">Apri sul sito</a>
+                <a id="mcDownload" href="Menu LievitiAmo Pizzeria Sorrentina - 2025.pdf" target="_blank" rel="noopener">Scarica PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="script.js"></script>
+
+    <script>
+        // Anno automatico nel footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

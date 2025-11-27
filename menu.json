@@ -1,0 +1,364 @@
+{
+    "title": "Menu Pizze 2025",
+    "categories": [{
+            "title": "Pizze Classiche",
+            "items": [{
+                    "title": "Marinara",
+                    "desc": "Pomodoro, olio EVO, origano, aglio",
+                    "price": "€ 5.00",
+                    "vegan": true,
+                    "vegetarian": true,
+                    "allergens": "(1)"
+                },
+                {
+                    "title": "Margherita",
+                    "desc": "Pomodoro, fiordilatte, basilico, olio EVO",
+                    "price": "€ 6.50",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Napoli",
+                    "desc": "Pomodoro, fiordilatte, capperi, alici, origano",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,4,7)"
+                },
+                {
+                    "title": "Bufala",
+                    "desc": "Fiordilatte, pomodorini, rucola, scaglie di grana, crudo di Parma",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Diavola",
+                    "desc": "Pomodoro, fiordilatte, spianata piccante",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Capricciosa",
+                    "desc": "Pomodoro, fiordilatte, funghi freschi, prosciutto cotto, salsiccia, carciofini, olive taggiasche",
+                    "price": "€ 12.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Romana",
+                    "desc": "Pomodoro, fiordilatte, alici, capperi, olive taggiasche",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,4,7)"
+                },
+                {
+                    "title": "Vegetariana",
+                    "desc": "Pomodoro, fiordilatte, peperoni, zucchine, pomodorini, melanzane",
+                    "price": "€ 10.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Cosacca",
+                    "desc": "Pomodoro, parmigiano, basilico, olio EVO in uscita",
+                    "price": "€ 6.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Filetto",
+                    "desc": "Fiordilatte, pomodorini a filetto, basilico, parmigiano, olio EVO in uscita",
+                    "price": "€ 7.50",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Provola e Pepe",
+                    "desc": "Pomodoro, provola (fiordilatte affumicato), pepe, basilico, parmigiano, olio EVO in uscita",
+                    "price": "€ 9.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                }
+            ]
+        },
+        {
+            "title": "Pizze Rosse",
+            "items": [{
+                    "title": "Vegana",
+                    "desc": "Pomodoro, melanzane, zucchine, peperoni, funghi freschi, pomodorini",
+                    "price": "€ 9.50",
+                    "vegetarian": true,
+                    "vegan": true,
+                    "allergens": "(1)"
+                },
+                {
+                    "title": "Abruzzese",
+                    "desc": "Pomodoro, cipolla di Tropea, pancetta arrotolata croccante, scaglie di pecorino",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Tirrenica",
+                    "desc": "Doppio pomodoro, alici, olive taggiasche, capperi, origano, olio EVO",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,4)"
+                }
+            ]
+        },
+        {
+            "title": "Pizze Bianche",
+            "items": [{
+                    "title": "Cipollina",
+                    "desc": "Fiordilatte, pancetta arrotolata croccante, cipolla di Tropea",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "4 Formaggi",
+                    "desc": "Fiordilatte, mozzarella di bufala campana DOP, gorgonzola, scaglie di grana",
+                    "price": "€ 10.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Tricolore",
+                    "desc": "Fiordilatte, pomodorini, rucola, scaglie di grana, crudo di Parma",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Romagnola",
+                    "desc": "Fiordilatte, radicchio, squacquerone, crudo di Parma, salsiccia",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Golosa",
+                    "desc": "Fiordilatte, gorgonzola, funghi freschi, speck",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Boscaiola",
+                    "desc": "Fiordilatte, porcini, salsiccia, rucola",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Sottobosco",
+                    "desc": "Fiordilatte, porcini, radicchio, pancetta arrotolata croccante",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                }
+            ]
+        },
+        {
+            "title": "Pizze di Stagione",
+            "items": [{
+                    "title": "Dea",
+                    "desc": "Crema di zucca*, porcini, brie, speck croccante",
+                    "price": "€ 13.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Mantova",
+                    "desc": "Crema di zucca*, fiordilatte, pancetta croccante, provolone a scaglie",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Pioggia",
+                    "desc": "Crema di zucca*, radicchio, gorgonzola, coppa",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Vegana d'Autunno",
+                    "desc": "Crema di zucca*, radicchio, funghi freschi, porcini",
+                    "price": "€ 11.00",
+                    "vegetarian": true,
+                    "vegan": true,
+                    "allergens": "(1)"
+                },
+                {
+                    "title": "Anna",
+                    "desc": "Ragù napoletano cotto nel coccio in forno a legna, provola affumicata, ricotta, basilico, pepe",
+                    "price": "€ 12.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7,9)"
+                },
+                {
+                    "title": "Lievitiamo",
+                    "desc": "Crema di zucca*, salsiccia, funghi trifolati, fonduta di taleggio aromatizzata al rosmarino, pepe",
+                    "price": "€ 12.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7,9)"
+                },
+                {
+                    "title": "Salsiccia e Friarielli",
+                    "desc": "Fiordilatte, salsiccia, friarielli",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Vomero",
+                    "desc": "Provola affumicata, salsiccia, friarielli",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Nerano",
+                    "desc": "Pesto di zucchine, zucchine fritte, fiordilatte, pancetta",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                }
+            ]
+        },
+        {
+            "title": "Pizze Speciali",
+            "items": [{
+                    "title": "Nostrana",
+                    "desc": "Fiordilatte, pancetta arrotolata croccante, patate al forno, salsiccia, cipolla di Tropea",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Parmigiana",
+                    "desc": "Pomodoro, provola, melanzane fritte, provolone silano, parmigiano, basilico",
+                    "price": "€ 12.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Verace",
+                    "desc": "Pomodoro San Marzano, bufala, datterino giallo, basilico, olio EVO",
+                    "price": "€ 12.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Aurelia",
+                    "desc": "Pesto genovese, provola, pomodori secchi, tarallo napoletano",
+                    "price": "€ 10.00",
+                    "vegetarian": true,
+                    "allergens": "(1,7,8)"
+                },
+                {
+                    "title": "Contadina",
+                    "desc": "Fiordilatte, datterino giallo, coppa, tarallo napoletano",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7,8)"
+                },
+                {
+                    "title": "Aromatica",
+                    "desc": "Fiordilatte, alici, scaglie di provolone silano, olio EVO al limone di Sorrento",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,4,7)"
+                },
+                {
+                    "title": "Bormio",
+                    "desc": "Fiordilatte, bresaola marinata, rucola, grana, zest di limone bio, pepe",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Riace",
+                    "desc": "Fiordilatte, pomodoro, 'Nduja, peperoni, cipolla di Tropea, salsiccia",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Toscana",
+                    "desc": "Patate al forno, salsiccia, lardo di Colonnata o pata negra, grana",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Miro",
+                    "desc": "Pesto di zucchine, pancetta arrotolata croccante, scaglie di pecorino",
+                    "price": "€ 8.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7,8)"
+                }
+            ]
+        },
+        {
+            "title": "Calzone Sorrentino",
+            "items": [{
+                    "title": "Amalfi",
+                    "desc": "Fiordilatte, alici, scarola, capperi, olive taggiasche, pomodori secchi",
+                    "price": "€ 9.00",
+                    "vegetarian": false,
+                    "allergens": "(1,4,7)"
+                },
+                {
+                    "title": "Positano",
+                    "desc": "Fiordilatte, provola, salsiccia, patate al forno, lardo di Colonnata",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Sorrento",
+                    "desc": "Fiordilatte, ricotta, pepe, scaglie di provolone silano, pomodorini, crudo di Parma, rucola",
+                    "price": "€ 12.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Ischia",
+                    "desc": "Provola affumicata, alici, friarielli, pomodori secchi",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,4,7)"
+                }
+            ]
+        },
+        {
+            "title": "Saltimbocca",
+            "items": [{
+                    "title": "Classico",
+                    "desc": "Crudo di Parma, provola",
+                    "price": "€ 8.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Ravello",
+                    "desc": "Salsiccia, patate al forno, peperoni, provola",
+                    "price": "€ 10.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                },
+                {
+                    "title": "Capua",
+                    "desc": "Provola affumicata, salsiccia, friarielli",
+                    "price": "€ 11.00",
+                    "vegetarian": false,
+                    "allergens": "(1,7)"
+                }
+            ]
+        }
+    ]
+}
