@@ -85,13 +85,14 @@ header[role="banner"] {
     object-fit: contain;
     object-position: left center;
     transition: transform .25s ease, filter .25s ease;
-    filter: brightness(1.1) drop-shadow(0 0 3px rgba(0, 0, 0, .4));
+    filter: contrast(1.05) saturate(1.1);
     /* Ombra leggera */
 }
 
 .logo:hover .logo-img {
-    transform: scale(1.03);
-    filter: brightness(1.25);
+    filter: contrast(1.1) saturate(1.15);
+    transform: scale(1.02);
+    transition: .25s ease;
 }
 
 
