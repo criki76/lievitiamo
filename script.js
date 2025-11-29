@@ -99,6 +99,7 @@ function prettySlug(title) {
 
     // Evidenziazione link attivo su scroll
     // NAVBAR: link attivo basato sulla posizione di scroll
+    // NAVBAR: link attivo + gestione anchor (#menu) con offset
     const links = $all('.nav-link');
     const sections = links
         .map(a => {
@@ -132,23 +133,37 @@ function prettySlug(title) {
         setActive(currentId);
     };
 
+    // scroll con offset per #ancore (utile da mobile / QR)
+    const scrollToHashWithOffset = (hash) => {
+        if (!hash) return;
+        const target = document.querySelector(hash);
+        if (!target) return;
+
+        const offset = 140; // stesso valore di onScroll
+        const y = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: 'auto' });
+    };
+
     // aggiorna su scroll
     window.addEventListener('scroll', onScroll);
 
-    // se arrivo con hash (es. QR su #menu), forzo subito il corretto
-    if (window.location.hash) {
-        setActive(window.location.hash);
-    } else {
-        onScroll();
-    }
-
-    // se cambia solo l'hash (clic su ancora / QR), ricalcolo
-    window.addEventListener('hashchange', () => {
+    // pagina aperta con hash (es. QR su #menu)
+    window.addEventListener('load', () => {
         if (window.location.hash) {
+            scrollToHashWithOffset(window.location.hash);
             setActive(window.location.hash);
         } else {
             onScroll();
+        }
+    });
 
+    // se cambia solo l'hash (clic link / QR)
+    window.addEventListener('hashchange', () => {
+        if (window.location.hash) {
+            scrollToHashWithOffset(window.location.hash);
+            setActive(window.location.hash);
+        } else {
+            onScroll();
         }
     });
 
