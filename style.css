@@ -43,7 +43,7 @@ body {
 /* Offset per la navigazione fissa (header + menu sticky) */
 
 section[id] {
-    scroll-margin-top: calc(var(--header-height) + 60px);
+    scroll-margin-top: calc(var(--header-height) + 20px);
 }
 
 
