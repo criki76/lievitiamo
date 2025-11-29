@@ -98,6 +98,7 @@ function prettySlug(title) {
     });
 
     // Evidenziazione link attivo su scroll
+    // Evidenziazione link attivo su scroll (sceglie la sezione più visibile)
     const links = $all('.nav-link');
     const sections = links
         .map(a => document.querySelector(a.getAttribute('href')))
@@ -105,17 +106,26 @@ function prettySlug(title) {
 
     if (sections.length && 'IntersectionObserver' in window) {
         const io = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = '#' + entry.target.id;
-                    links.forEach(a =>
-                        a.classList.toggle('active', a.getAttribute('href') === id)
-                    );
-                }
+            const visible = entries.filter(e => e.isIntersecting);
+            if (!visible.length) return;
+
+            // prende la sezione con più area visibile
+            const best = visible.reduce((a, b) =>
+                a.intersectionRatio > b.intersectionRatio ? a : b
+            );
+
+            const id = '#' + best.target.id;
+            links.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === id);
             });
-        }, { rootMargin: '-60% 0px -35% 0px', threshold: 0.01 });
+        }, {
+            rootMargin: '-45% 0px -45% 0px',
+            threshold: [0.1, 0.25, 0.5, 0.75]
+        });
+
         sections.forEach(sec => io.observe(sec));
     }
+
 })();
 
 /* =========================================================
