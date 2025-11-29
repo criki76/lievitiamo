@@ -99,10 +99,19 @@ function prettySlug(title) {
 
     // Evidenziazione link attivo su scroll
     // Evidenziazione link attivo su scroll (sceglie la sezione più visibile)
+    // NAVBAR: evidenzia link attivo (scroll + anchor tipo #menu)
     const links = $all('.nav-link');
     const sections = links
         .map(a => document.querySelector(a.getAttribute('href')))
         .filter(Boolean);
+
+    // funzione di comodo per attivare il link giusto
+    const setActive = (id) => {
+        if (!id) return;
+        links.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === id);
+        });
+    };
 
     if (sections.length && 'IntersectionObserver' in window) {
         const io = new IntersectionObserver((entries) => {
@@ -115,9 +124,7 @@ function prettySlug(title) {
             );
 
             const id = '#' + best.target.id;
-            links.forEach(a => {
-                a.classList.toggle('active', a.getAttribute('href') === id);
-            });
+            setActive(id);
         }, {
             rootMargin: '-45% 0px -45% 0px',
             threshold: [0.1, 0.25, 0.5, 0.75]
@@ -125,6 +132,17 @@ function prettySlug(title) {
 
         sections.forEach(sec => io.observe(sec));
     }
+
+    // se arrivo già con un # (es. QR su #menu), forza subito il link giusto
+    if (window.location.hash) {
+        setActive(window.location.hash);
+    }
+
+    // se cambia solo l'hash (ancora), aggiorna l'attivo
+    window.addEventListener('hashchange', () => {
+        setActive(window.location.hash);
+    });
+
 
 })();
 
