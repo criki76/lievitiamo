@@ -551,29 +551,26 @@ document.addEventListener('menuRendered', setupAllergenTooltips);
 /* =========================================================
    9) LINK DINAMICI — senza config.js
    ========================================================= */
+/* =========================================================
+   9) LINK DINAMICI — senza config.js
+   ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
     // 🔧 CONFIGURA QUI I TUOI DATI UNA VOLTA SOLA:
-    const phone = "0543037252"; // telefono
+    const phone = "0543037252"; // telefono (solo numeri)
     const whatsapp = "393000000000"; // whatsapp senza +
-    // Indirizzo → Google Maps (URL esatto che vuoi tu)
+    const addressLabel = "Via XXIV maggio 6, Forlì"; // testo da mostrare
     const mapsUrl = "https://www.google.com/maps/place/LievitiAmo+Pizzeria+-+Forli/@44.2173956,12.0422807,17z/data=!3m1!4b1!4m6!3m5!1s0x132b5738c6ccc94b:0x54237c9fa5bbfc35!8m2!3d44.2173918!4d12.0448556!16s%2Fg%2F11vj62ltxh?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D";
-
-    $all('[data-address]').forEach(el => {
-        el.setAttribute('href', mapsUrl);
-        if (!el.textContent.trim()) el.textContent = address;
-    });
-
-    const email = "info@lievitiamo.it"; // email
+    const email = "info@lievitiamo.it";
     const instagram = "https://www.instagram.com/lievitiamo_pizzeria_forli/";
     const facebook = "https://www.facebook.com/lievitiamopizzeria";
 
-    // Telefono
+    // ☎ Telefono
     $all('[data-phone]').forEach(el => {
         el.setAttribute('href', 'tel:' + phone);
         if (!el.textContent.trim()) el.textContent = phone;
     });
 
-    // WhatsApp
+    // 💬 WhatsApp
     const waMsg = 'Ciao! Vorrei ordinare una pizza.';
     $all('[data-whatsapp]').forEach(el => {
         el.setAttribute(
@@ -582,22 +579,25 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     });
 
-    // Indirizzo → Google Maps
+    // 📍 Indirizzo
+    // 📍 Indirizzo — TUTTI i data-address usano lo stesso link LievitiAmo
     $all('[data-address]').forEach(el => {
-        el.setAttribute(
-            'href',
-            'https://maps.google.com/?q=' + encodeURIComponent(address)
-        );
-        if (!el.textContent.trim()) el.textContent = address;
+        el.setAttribute('href', mapsUrl);
+
+        // Se l'elemento non ha testo, metto l'indirizzo leggibile
+        if (!el.textContent.trim()) {
+            el.textContent = addressLabel;
+        }
     });
 
-    // Email
+
+    // 📧 Email
     $all('[data-email]').forEach(el => {
         el.setAttribute('href', 'mailto:' + email);
         if (!el.textContent.trim()) el.textContent = email;
     });
 
-    // Instagram / Facebook
+    // 📱 Social
     const ig = $('[data-instagram]');
     if (ig) ig.setAttribute('href', instagram);
 
