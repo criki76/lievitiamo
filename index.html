@@ -5,15 +5,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LievitiAmo • Pizzeria Sorrentina • Forlì</title>
+    <meta name="description" content="La vera Pizzeria Sorrentina a Forlì: forno a legna, lievito madre e ingredienti freschi. Ordina ora la tua pizza d'asporto o a domicilio!" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.lievitiamopizzeria.it/" />
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- CSS principale -->
+    <!-- CSS principale (assicurati che il file si chiami davvero styles.css) -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:title" content="LievitiAmo – Pizzeria Sorrentina a Forlì">
+    <meta property="og:description" content="La vera Pizzeria Sorrentina a Forlì: forno a legna, lievito madre e ingredienti freschi. Ordina ora la tua pizza d'asporto o a domicilio!">
+    <meta property="og:url" content="https://www.lievitiamopizzeria.it/">
+    <meta property="og:image" content="https://www.lievitiamopizzeria.it/img/logo-lievitiamo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LievitiAmo – Pizzeria Sorrentina a Forlì">
+    <meta name="twitter:description" content="La vera Pizzeria Sorrentina a Forlì: forno a legna, lievito madre e ingredienti freschi. Ordina ora la tua pizza d'asporto o a domicilio!">
+    <meta name="twitter:image" content="https://www.lievitiamopizzeria.it/img/logo-lievitiamo.png">
+
+    <!-- Dati strutturati JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "PizzaRestaurant",
+            "name": "LievitiAmo Pizzeria Sorrentina",
+            "image": "https://www.lievitiamopizzeria.it/img/logo-lievitiamo.png",
+            "url": "https://www.lievitiamopizzeria.it/",
+            "telephone": "+39 0543 037252",
+            "priceRange": "€€",
+            "servesCuisine": [
+                "Pizza",
+                "Italiana",
+                "Napoletana"
+            ],
+            "menu": "https://www.lievitiamopizzeria.it/#menu",
+            "hasMenu": {
+                "@type": "Menu",
+                "name": "Menu Pizze e Saltimbocca LievitiAmo Forlì"
+            },
+            "acceptsReservations": false,
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Via XXIV maggio 6",
+                "addressLocality": "Forlì",
+                "addressRegion": "FC",
+                "postalCode": "47121",
+                "addressCountry": "IT"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "44.223000",
+                "longitude": "12.040100"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "150"
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "18:30",
+                "closes": "22:30"
+            }],
+            "potentialAction": {
+                "@type": "OrderAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://wa.me/393000000000?text=Ciao! Vorrei ordinare una pizza.",
+                    "actionPlatform": [
+                        "http://schema.org/MobileWeb",
+                        "http://schema.org/DesktopWeb"
+                    ]
+                }
+            }
+        }
+    </script>
 </head>
+
+
 
 <body>
 
@@ -503,5 +589,7 @@
     </script>
 
 </body>
+
+</html>
 
 </html>
