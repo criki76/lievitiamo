@@ -98,14 +98,16 @@ function prettySlug(title) {
     });
 
     // Evidenziazione link attivo su scroll
-    // Evidenziazione link attivo su scroll (sceglie la sezione più visibile)
-    // NAVBAR: evidenzia link attivo (scroll + anchor tipo #menu)
+    // NAVBAR: link attivo basato sulla posizione di scroll
     const links = $all('.nav-link');
     const sections = links
-        .map(a => document.querySelector(a.getAttribute('href')))
+        .map(a => {
+            const id = a.getAttribute('href');
+            const el = document.querySelector(id);
+            return el ? { id, el } : null;
+        })
         .filter(Boolean);
 
-    // funzione di comodo per attivare il link giusto
     const setActive = (id) => {
         if (!id) return;
         links.forEach(a => {
@@ -113,35 +115,45 @@ function prettySlug(title) {
         });
     };
 
-    if (sections.length && 'IntersectionObserver' in window) {
-        const io = new IntersectionObserver((entries) => {
-            const visible = entries.filter(e => e.isIntersecting);
-            if (!visible.length) return;
+    const onScroll = () => {
+        if (!sections.length) return;
 
-            // prende la sezione con più area visibile
-            const best = visible.reduce((a, b) =>
-                a.intersectionRatio > b.intersectionRatio ? a : b
-            );
+        const offset = 140; // altezza header + margine
+        const pos = window.scrollY + offset;
 
-            const id = '#' + best.target.id;
-            setActive(id);
-        }, {
-            rootMargin: '-45% 0px -45% 0px',
-            threshold: [0.1, 0.25, 0.5, 0.75]
+        // prende l'ultima sezione il cui top è sopra la posizione corrente
+        let currentId = sections[0].id;
+        sections.forEach(s => {
+            if (pos >= s.el.offsetTop) {
+                currentId = s.id;
+            }
         });
 
-        sections.forEach(sec => io.observe(sec));
-    }
+        setActive(currentId);
+    };
 
-    // se arrivo già con un # (es. QR su #menu), forza subito il link giusto
+    // aggiorna su scroll
+    window.addEventListener('scroll', onScroll);
+
+    // se arrivo con hash (es. QR su #menu), forzo subito il corretto
     if (window.location.hash) {
         setActive(window.location.hash);
+    } else {
+        onScroll();
     }
 
-    // se cambia solo l'hash (ancora), aggiorna l'attivo
+    // se cambia solo l'hash (clic su ancora / QR), ricalcolo
     window.addEventListener('hashchange', () => {
-        setActive(window.location.hash);
+        if (window.location.hash) {
+            setActive(window.location.hash);
+        } else {
+            onScroll();
+
+        }
     });
+
+
+
 
 
 })();
