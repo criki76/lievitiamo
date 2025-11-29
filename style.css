@@ -1102,6 +1102,15 @@ header[role="banner"] {
     width: 94%;
 }
 
+
+/* Desktop: larghezza ridotta al 70% */
+
+@media (min-width: 1024px) {
+    .menu-controls {
+        width: 70%;
+    }
+}
+
 .menu-controls a {
     display: inline-flex;
     align-items: center;
