@@ -136,6 +136,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (first && first.focus) setTimeout(() => first.focus(), 10);
     };
     const close = () => chooser.setAttribute('hidden', '');
+    // Chiudi automaticamente quando si clicca un link dentro il chooser
+    chooser.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            chooser.setAttribute('hidden', '');
+        });
+    });
+
 
     openBtn.addEventListener('click', open);
     closeBtn && closeBtn.addEventListener('click', close);
