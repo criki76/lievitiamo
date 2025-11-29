@@ -951,16 +951,25 @@ header[role="banner"] {
     margin: 0 auto;
 }
 
+
+/* Badge Offerta Campus - stile premium LievitiAmo */
+
 .promo-badge {
-    display: inline-block;
-    background: #e6f7ff;
-    color: #0077b6;
-    border: 1px solid #b3e5fc;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff4da;
+    /* crema */
+    color: var(--primary-dark);
+    /* rosso scuro */
+    border: 1px solid #f1d9a7;
+    /* oro tenue */
+    padding: 0.3rem 0.9rem;
     border-radius: 999px;
-    padding: .3rem .9rem;
     font-weight: 700;
-    margin-bottom: .6rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .promo-title {
